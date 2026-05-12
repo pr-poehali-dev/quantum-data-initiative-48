@@ -3,40 +3,40 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
+    title: "Универсальный коннектор",
+    description: "Поддержка протоколов MQTT, HTTP, WebSocket, Modbus и более 200 типов устройств без дополнительных настроек.",
+    icon: "link",
+    badge: "Протоколы",
+  },
+  {
+    title: "Мониторинг в реальном времени",
+    description: "Дашборды с живыми данными от всех подключённых устройств. Задержка менее 50 мс от датчика до экрана.",
+    icon: "zap",
+    badge: "Real-time",
+  },
+  {
+    title: "Безопасная передача данных",
+    description: "Сквозное шифрование TLS 1.3, аутентификация по сертификатам и контроль доступа на уровне устройства.",
+    icon: "lock",
+    badge: "Безопасность",
+  },
+  {
+    title: "Умная аналитика",
+    description: "ИИ-алгоритмы анализируют паттерны работы устройств, предсказывают отказы и оптимизируют потребление ресурсов.",
     icon: "brain",
     badge: "ИИ",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
-  },
-  {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
+    title: "Масштабируемость",
+    description: "От 10 до 100 000+ устройств без изменения архитектуры. Облачное развёртывание за 15 минут.",
     icon: "globe",
-    badge: "Точность",
+    badge: "Cloud",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
-  },
-  {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
-  },
-  {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
+    title: "Управление устройствами",
+    description: "Удалённые команды, обновления прошивок OTA и конфигурация парка устройств из единого интерфейса.",
     icon: "target",
-    badge: "XR Ready",
+    badge: "OTA",
   },
 ]
 
@@ -45,9 +45,9 @@ export function FeaturesSection() {
     <section className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности платформы</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Полный набор инструментов для интеграции, управления и анализа IoT-устройств
           </p>
         </div>
 
@@ -61,12 +61,12 @@ export function FeaturesSection() {
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
+                    {feature.icon === "brain" && "🧠"}
+                    {feature.icon === "lock" && "🔒"}
+                    {feature.icon === "globe" && "🌐"}
+                    {feature.icon === "zap" && "⚡"}
+                    {feature.icon === "link" && "🔗"}
+                    {feature.icon === "target" && "🎯"}
                   </span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}

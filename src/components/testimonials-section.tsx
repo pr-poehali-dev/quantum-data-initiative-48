@@ -3,25 +3,25 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const testimonials = [
   {
-    name: "Елена Родригес",
-    role: "Директор по нейронауке, Quantum Dynamics",
-    avatar: "/professional-woman-scientist.png",
-    content:
-      "SynapseAI изменил наш подход к нейрореабилитации. Результаты пациентов улучшились на 340% после внедрения.",
-  },
-  {
-    name: "Маркус Уильямс",
-    role: "Руководитель исследований, Stellar Analytics",
+    name: "Алексей Морозов",
+    role: "Директор по производству, Промтех",
     avatar: "/cybersecurity-expert-man.jpg",
     content:
-      "Точность и протоколы безопасности не имеют аналогов. Мы значительно ускорили клинические испытания с платформой SynapseAI.",
+      "Подключили 400 станков за одну неделю. Количество незапланированных простоев снизилось на 45% — результат, которого мы ждали годами.",
   },
   {
-    name: "Анна Ковальски",
-    role: "Вице-президент по разработке, Nova Industries",
+    name: "Елена Кузнецова",
+    role: "Руководитель ИТ, LogiGroup",
+    avatar: "/professional-woman-scientist.png",
+    content:
+      "TC IoT интегрировался с нашей ERP-системой без единой строчки кастомного кода. Мониторинг всего парка техники — в одном экране.",
+  },
+  {
+    name: "Дмитрий Ван",
+    role: "CTO, SmartBuilding Solutions",
     avatar: "/asian-woman-tech-developer.jpg",
     content:
-      "Интеграция прошла безупречно. Адаптивные алгоритмы понимают намерения пользователя лучше любой системы, что мы тестировали.",
+      "Лучшее решение для умных зданий на рынке. Управляем 12 объектами из одной точки, экономия по энергии — 28% уже в первый квартал.",
   },
 ]
 
@@ -30,9 +30,9 @@ export function TestimonialsSection() {
     <section className="py-24 px-6 bg-card">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Нам доверяют лидеры</h2>
+          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Нам доверяют лидеры рынка</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Что говорят лидеры индустрии о нашей революционной технологии
+            Что говорят компании, которые уже автоматизировали свои процессы с TC IoT
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export function TestimonialsSection() {
                     </AvatarFallback>
                   </Avatar>
                   <div>
-                    <p className="font-semibold text-primary">{testimonial.name}</p>
+                    <p className="font-semibold text-card-foreground">{testimonial.name}</p>
                     <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                   </div>
                 </div>
